@@ -257,6 +257,14 @@ providers until the user is found:
                 chain:
                     providers: ['legacy_users', 'users', 'backend_users']
 
+.. caution::
+
+    This section describes how to define multiple user providers. Any of these 
+    providers can be used in your firewall definitions. For the example 
+    configuration to have an effect in a default Symfony installation, you must set 
+    ``security.firewalls.main.provider: all_users``. See `this section <https://symfony.com/doc/current/security.html#the-firewall>`_
+    for more information on firewall configuration.
+
 .. _security-custom-user-provider:
 
 Creating a Custom User Provider
